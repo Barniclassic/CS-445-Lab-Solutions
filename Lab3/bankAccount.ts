@@ -1,6 +1,6 @@
 let bankAccount: {
     money: number,
-    deposit(value:number)
+    deposit(value:number): any,
 }
 
 bankAccount = { 
