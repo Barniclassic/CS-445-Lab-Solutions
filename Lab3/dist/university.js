@@ -1,3 +1,4 @@
+"use strict";
 var University = /** @class */ (function () {
     function University(name, dept) {
         this.name = name;

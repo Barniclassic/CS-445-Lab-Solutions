@@ -1,8 +1,9 @@
+"use strict";
 var baseObject;
 baseObject = {
     width: 0,
     length: 0,
-    calcSize: function () { }
+    calcSize: function () { },
 };
 var rectangle;
 rectangle = Object.create(baseObject);
