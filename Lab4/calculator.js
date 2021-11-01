@@ -1,7 +1,5 @@
-"use strict";
 onload = function () {
     var body = document.getElementById("body");
-    var title = document.createElement("h1");
     var input1 = document.createElement("textarea");
     input1.id = "input1";
     input1.placeholder = "insert a number";
@@ -14,11 +12,9 @@ onload = function () {
     button.type = "button";
     button.value = "Submit";
     button.id = "button";
-    body.appendChild(title);
     body.appendChild(input1);
     body.appendChild(document.createTextNode('  '));
     body.appendChild(input2);
-    body.appendChild(document.createElement("br"));
     body.appendChild(document.createElement("br"));
     body.appendChild(button);
     body.appendChild(document.createElement("br"));

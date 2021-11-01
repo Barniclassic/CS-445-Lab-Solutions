@@ -23,18 +23,18 @@ onload = function(){
     array.push(span1);
     array.push(span2);
     div.appendChild(array[0]);
-    div.appendChild( document.createTextNode( '\u00A0\u00A0\u00A0' ) );
+    div.appendChild( document.createTextNode( '  ' ) );
     div.appendChild(button);
-    div.appendChild( document.createTextNode( '\u00A0\u00A0\u00A0' ) );
+    div.appendChild( document.createTextNode( '  ' ) );
     div.appendChild(array[1]);
     body.appendChild(div);
     document.getElementById("swap").addEventListener('click', function(){
         let value = array.pop();
         array.unshift(value);
         div.appendChild(array[0]);
-        div.appendChild( document.createTextNode( '\u00A0\u00A0\u00A0' ) );
+        div.appendChild( document.createTextNode( '  ' ) );
         div.appendChild(button);
-        div.appendChild( document.createTextNode( '\u00A0\u00A0\u00A0' ) );
+        div.appendChild( document.createTextNode( '  ' ) );
         div.appendChild(array[1]);
         body.appendChild(div);
         onload;
