@@ -2,6 +2,7 @@
 onload = function () {
     var body = document.getElementById("body");
     var title = document.createElement("h1");
+    title.appendChild(document.createTextNode("Calculator"));
     var input1 = document.createElement("textarea");
     input1.id = "input1";
     input1.placeholder = "insert a number";
