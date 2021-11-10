@@ -12,7 +12,7 @@ onload = function () {
     var div = document.createElement("div");
     var img1 = document.createElement("img");
     var img2 = document.createElement("img");
-    img1.src = "https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+    img1.src = "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg";
     img1.setAttribute("height", "600px");
     img1.setAttribute("width", "500px");
     img2.src = "https://i.pinimg.com/originals/8e/6c/06/8e6c064f57f94838263d7ba9ad80f353.jpg";

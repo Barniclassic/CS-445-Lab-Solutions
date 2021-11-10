@@ -1,17 +1,21 @@
+
 async function primeTest(num) {
-    // setTimeout(prime, 500);
+    let a = {};
     function prime () {
         for (let i = 2, s = Math.sqrt(num); i <= s; i++){
             if (num % i === 0) {
-                return { prime: false };
+                a = { prime: false };
             }
-            return { prime: num > 1 };
+            a = { prime: num > 1 };
         }
     }
+    prime();
+    setTimeout( ()=>(a),5000);
+    return a;
 }
 
 async function isPrimeAsync(num){
-    await primeTest(num);
+   console.log(await primeTest(num));
 }
 
 console.log('start');

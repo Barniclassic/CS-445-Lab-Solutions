@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="bdy">
+    <div id="container">
+      <p id="btn">Click Me!</p>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("bdy").addEventListener("click", function () {
+        alert("Body!");
+      }); //bubbling phase
+      document.getElementById("container").addEventListener(
+        "click",
+        function () {
+          alert("Div!");
+        }
+      ); //capture phase
+      document
+        .getElementById("btn")
+        .addEventListener("click", function (event) {
+          alert("Text clicked!");
+        //   event.stopPropagation();
+        }); //bubbling phase
+    </script>
+  </body>
+</html>
