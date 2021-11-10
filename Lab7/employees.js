@@ -4,7 +4,7 @@ window.onload = function () {
 };
 
 async function employeesList() {
-  let promise = await fetch("https://randomuser.me/api/?results=10");
+  let promise = await fetch("https://randomuser.me/api/?results=5");
   let after = await promise.json();
   let employee = after.results;
   let row = document.getElementById("row");
