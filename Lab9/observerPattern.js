@@ -12,9 +12,11 @@ Subject.prototype = {
         
     },
     emit: function(event, message){
-        this.observers[event].forEach(function (func){
-            func(message);
-        })   
+        if(this.observers[event]){
+            this.observers[event].forEach(function (func){
+                func(message);
+            })
+        } 
     }
 }
 
